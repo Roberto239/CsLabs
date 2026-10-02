@@ -1,4 +1,4 @@
-﻿namespace StudentProjects
+﻿namespace Sem1Lab02
 {
     internal class Program
     {
