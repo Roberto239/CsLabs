@@ -10,6 +10,6 @@
     <Project Path="sem-1-lab-02-server-config/Sem1Lab02/Sem1Lab02.csproj" Id="5ad942ea-4355-4d72-ad33-b1d5d0576694" />
   </Folder>
   <Folder Name="/sem-1-practice-2-log-parse/">
-    <Project Path="Practice/Practice.csproj" Id="b4683e09-555f-463f-a51e-5f44b979b25b" />
+    <Project Path="Practice/sem-1-practice-2-log-parse.csproj" Id="b4683e09-555f-463f-a51e-5f44b979b25b" />
   </Folder>
 </Solution>
