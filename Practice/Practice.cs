@@ -1,4 +1,4 @@
-namespace LogParse;
+namespace LogParse
 
 internal class Program
 {
