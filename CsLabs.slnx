@@ -13,4 +13,7 @@
     <Project Path="sem-1-lab-03-report-generator/Sem1Lab03.Tests/Sem1Lab03.Tests.csproj" Id="225c5800-f4da-4ed6-90f6-995e0d97d09e" />
     <Project Path="sem-1-lab-03-report-generator/Sem1Lab03/Sem1Lab03.csproj" Id="219d9873-9ca3-429e-ad88-cb1933d36f8c" />
   </Folder>
+  <Folder Name="/sem-1-prac-02-log-parse/">
+    <Project Path="sem-1-prac-02-log-parse/Sem1Prac02/Sem1Prac02.csproj" Id="6694df13-ecb1-48db-bd7b-1f41606562f4" />
+  </Folder>
 </Solution>
