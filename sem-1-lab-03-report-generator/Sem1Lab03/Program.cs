@@ -2,7 +2,6 @@
 
 public class Program
 {
-
     public static string BuildReport(string[] lines)
     {
 
@@ -134,7 +133,10 @@ public class Program
             int warningsCount = 0;
             foreach (string line in lines[warningsStart..warningsEnd])
             {
-                if (line.Contains("[Warning]")) { warningsCount++; }
+                if (line.Contains("[Warning]"))
+                {
+                    warningsCount++;
+                }
             }
             return warningsCount;
         }
@@ -146,13 +148,23 @@ public class Program
             int errorsEnd = 0;
             foreach (string line in lines)
             {
-                if (line.Contains("Событие началось:")) { errorsStart = lines.IndexOf(line); }
-                if (line.Contains("Событие успешно завершено:")) { errorsEnd = lines.IndexOf(line); }
+                if (line.Contains("Событие началось:"))
+                {
+                    errorsStart = lines.IndexOf(line);
+                }
+
+                if (line.Contains("Событие успешно завершено:"))
+                {
+                    errorsEnd = lines.IndexOf(line);
+                }
             }
             int errorsCount = 0;
             foreach (string line in lines[errorsStart..errorsEnd])
             {
-                if (line.Contains("[Error]")) { errorsCount++; }
+                if (line.Contains("[Error]"))
+                {
+                    errorsCount++;
+                }
             }
             return errorsCount;
         }
@@ -174,5 +186,4 @@ public class Program
         string[] lines = File.ReadAllLines("event_server.log");
         Console.WriteLine(BuildReport(lines));
     }
-
 }
