@@ -128,8 +128,14 @@ public class Program
             int warningsEnd = 0;
             foreach (string line in lines)
             {
-                if (line.Contains("Событие началось:")) { warningsStart = lines.IndexOf(line); }
-                if (line.Contains("Событие успешно завершено:")) { warningsEnd = lines.IndexOf(line); }
+                if (line.Contains("Событие началось:"))
+                {
+                    warningsStart = lines.IndexOf(line);
+                }
+                if (line.Contains("Событие успешно завершено:"))
+                {
+                    warningsEnd = lines.IndexOf(line);
+                }
             }
             int warningsCount = 0;
             foreach (string line in lines[warningsStart..warningsEnd])
