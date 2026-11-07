@@ -66,6 +66,7 @@ public class Program
                     string winnerScore = line.Substring(scoreStart + 3, scoreEnd - scoreStart - 4);
                     return winnerScore;
                 }
+                break;
             }
             return "";
         }
@@ -103,7 +104,7 @@ public class Program
             return "";
         }
 
-        //Утешитильный приз
+        //Утешительный приз
         static string getComfortPrize(string[] lines)
         {
             foreach (string line in lines)
